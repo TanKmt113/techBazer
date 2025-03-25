@@ -44,7 +44,7 @@ const MobileHeader = () => {
     },
     {
       link: "/my-orders",
-      label: "My Orders",
+      label: "Đơn hàng của tôi",
       icon: <ListOrdered />,
       isActive: pathname.includes("/my-orders"),
     },

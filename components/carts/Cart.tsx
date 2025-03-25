@@ -28,8 +28,8 @@ const Cart = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   const handleRovomeItemFromCart = (item: CartItem) => {
-    removeFromCart(item.id);
-    showToast("Item Removed from Cart", item?.images[0] as string, item.name);
+    removeFromCart(item.productId);
+    showToast("Item Removed from Cart", item?.images[0] as string, item.productName);
   };
 
   useEffect(() => {
@@ -60,39 +60,39 @@ const Cart = () => {
         </SheetTrigger>
         <SheetContent className="w-[90%] overflow-y-auto md:overflow-y-hidden">
           <SheetHeader>
-            <SheetTitle>Shopping Cart</SheetTitle>
+            <SheetTitle>Giỏ hàng</SheetTitle>
             <Separator />
             <SheetDescription className="flex items-start justify-between gap-4 flex-col h-[90vh]">
               <div className="overflow-y-auto">
                 {/* cart items here */}
                 {cartItems.map((item) => (
                   <div
-                    key={item.id}
+                    key={item.productId}
                     className="flex items-center justify-start gap-2 p-2
                       mt-2 border-b-2 border-t-gray-500"
                   >
                     <Image
                       className="rounded-full object-contain"
-                      src={item?.images && item?.images[0]}
+                      src={item.images[0] || ''}
                       alt="product iamge"
                       width={70}
                       height={70}
                     />
                     <div className="space-y-2">
                       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
-                        <h2>{item.name.slice(0, 50)}...</h2>
+                        <h2>{item.productName}</h2>
                       </div>
 
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center justify-between gap-3">
                         <p className="text-lg border border-green-500 px-2 rounded-md text-green-500">
                           ${item.price}
                         </p>
-                        <p className="text-lg">Qty : {item.quantity}</p>
+                        <p className="text-lg">Số lượng : {item.quantity}</p>
                         <Button
                           onClick={() => handleRovomeItemFromCart(item)}
                           variant={"destructive"}
                           size={"sm"}
-                          className="rounded-full"
+                          className="rounded-full "
                         >
                           <X />
                         </Button>
@@ -106,7 +106,7 @@ const Cart = () => {
               <div className="w-full">
                 <div className="flex items-center justify-between gap-2">
                   <h3 className="text-xl text-center font-semibold">
-                    Your Subtotal :
+                    Tổng tiền:
                   </h3>
                   <p className="text-xl text-center font-bold text-green-500">
                     $ {formatPrice(getTotalPrice())}

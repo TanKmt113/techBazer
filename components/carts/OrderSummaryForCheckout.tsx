@@ -23,9 +23,9 @@ const OrderSummaryForCheckout = () => {
 
   return (
     <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
-      {/* ordered items details */}
+      {/* Đơn hàng đã đặt details */}
       <div>
-        <h2 className="text-lg font-semibold my-2 lg:p-4">Order Items</h2>
+        <h2 className="text-lg font-semibold my-2 lg:p-4">Đơn hàng</h2>
         <CartItemsDetails />
         <Separator className="dark:bg-white/50 mb-2" />
       </div>
@@ -33,36 +33,36 @@ const OrderSummaryForCheckout = () => {
       {/* order summary for order place */}
       <div className="lg:px-4">
         <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-          Order Summary
+          Tổng quan đơn hàng
         </h2>
         <div className="flex justify-between mb-4">
-          <span className="text-gray-700 dark:text-gray-300">Subtotal:</span>
+          <span className="text-gray-700 dark:text-gray-300">Tổng tiền hàng:</span>
           <span className="text-gray-900 dark:text-white">
-            ${formatPrice(getTotalPrice())}
+            {formatPrice(getTotalPrice())} đ
           </span>
         </div>
         <div className="flex justify-between mb-4">
-          <span className="text-gray-700 dark:text-gray-300">Shipping:</span>
+          <span className="text-gray-700 dark:text-gray-300">Tổng tiền vận chuyển:</span>
           <span className="text-gray-900 dark:text-white">
-            ${formatPrice(getShippingFee())}
+            {formatPrice(getShippingFee())} đ
           </span>
         </div>
         <div className="flex justify-between mb-4">
-          <span className="text-gray-700 dark:text-gray-300">Tax:</span>
+          <span className="text-gray-700 dark:text-gray-300">Tổng tiền thuế:</span>
           <span className="text-gray-900 dark:text-white">
-            ${formatPrice(getTax())}
+            {formatPrice(getTax())} đ
           </span>
         </div>
         <div className="flex justify-between">
           <span className="text-xl font-semibold text-gray-900 dark:text-white">
-            Total:
+            Thành tiền:
           </span>
           <span className="text-xl font-semibold text-gray-900 dark:text-white">
-            ${formatPrice(getTotalAmount())}
+            {formatPrice(getTotalAmount())} đ
           </span>
         </div>
         <Button className="text-xl mt-6 bg-blue-500 dark:bg-blue-600 text-white py-6 px-12 hover:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none rounded-full hover:ring-2">
-          Place Order
+          Đặt hàng
         </Button>
       </div>
     </div>

@@ -8,16 +8,20 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { FaGoogle } from "react-icons/fa6";
+import { useApiClient } from "@/utils/apiClient";
 
 // Define Zod schema for form validation
 const signInSchema = z.object({
-  email: z.string().email("Invalid email"),
-  password: z.string().min(6, "Password must be at least 6 characters")
+  username: z.string().email("Invalid email"),
+  password: z.string().min(1, "Password must be at least 6 characters")
 });
 
 type SignInFormData = z.infer<typeof signInSchema>;
 
+
 const SignInForm = () => {
+
+  const { post } = useApiClient();
   const {
     register,
     handleSubmit,
@@ -26,8 +30,13 @@ const SignInForm = () => {
     resolver: zodResolver(signInSchema),
   });
 
-  const onSubmit = (data: SignInFormData) => {
-    console.log(data); // Handle form submission
+  const onSubmit = async (data: SignInFormData) => {
+    
+    const user = await post<any>('/login',data);
+    if(user.metadata){
+      localStorage.setItem('token',user.metadata.accessToken);
+      
+    }
   };
 
   return (
@@ -45,23 +54,23 @@ const SignInForm = () => {
         <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
           <div>
             <Label
-              htmlFor="email"
+              htmlFor="username"
               className="block text-sm font-medium text-gray-700 dark:text-gray-300"
             >
               Email Address
             </Label>
             <Input
-              type="email"
-              id="email"
+              type="username"
+              id="username"
               placeholder="you@example.com"
               className={`w-full border ${
-                errors.email ? "border-red-500" : "border-gray-300"
+                errors.username ? "border-red-500" : "border-gray-300"
               } dark:border-gray-700 rounded-lg px-4 py-2 focus:outline-none`}
-              {...register("email")}
+              {...register("username")}
             />
-            {errors.email && (
+            {errors.username && (
               <p className="text-red-500 text-sm mt-1">
-                {errors.email.message}
+                {errors.username.message}
               </p>
             )}
           </div>

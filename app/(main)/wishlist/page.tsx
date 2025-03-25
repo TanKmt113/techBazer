@@ -28,7 +28,7 @@ const WishlistPage = () => {
             Wishlist
           </h1>
           <p className="text-gray-600 dark:text-gray-300">
-            Your Saved Items Here
+            Your Lưud Items Here
           </p>
         </div>
         {/* Wishlist Items */}
@@ -51,7 +51,7 @@ const WishlistPage = () => {
                   href={`shop/${cart.id}`}
                   className="text-xl font-semibold text-gray-800 dark:text-white hover:opacity-60"
                 >
-                  {cart.name.slice(0, 50)}
+                  {cart.title.slice(0, 50)}
                 </Link>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   {cart.description.slice(0, 100)}
@@ -68,7 +68,7 @@ const WishlistPage = () => {
               </div>
               <div className="p-4 flex items-center justify-between">
                 <AddToCartBtn
-                  product={{ ...cart, quantity: 1, selectedColor: "" }}
+                  product={{ ...cart, quantity: 1}}
                 />
               </div>
             </div>

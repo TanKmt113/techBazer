@@ -14,8 +14,6 @@ const schema = z.object({
   address: z.string().min(5, "Address is required"),
   phone: z.string().min(8, "Phone is required"),
   city: z.string().min(3, "City is required"),
-  zip: z.string().min(5, "ZIP Code is required"),
-  country: z.string().min(2, "Country is required"),
 });
 
 // Defined types for form data
@@ -41,7 +39,7 @@ const CheckoutForm: React.FC = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="firstName">First Name</Label>
+            <Label htmlFor="firstName">Họ & đệm</Label>
             <Input
               id="firstName"
               {...register("firstName")}
@@ -52,7 +50,7 @@ const CheckoutForm: React.FC = () => {
             )}
           </div>
           <div>
-            <Label htmlFor="lastName">Last Name</Label>
+            <Label htmlFor="lastName">Tên khách hàng</Label>
             <Input
               id="lastName"
               {...register("lastName")}
@@ -64,7 +62,7 @@ const CheckoutForm: React.FC = () => {
           </div>
         </div>
         <div>
-          <Label htmlFor="address">Address</Label>
+          <Label htmlFor="address">Địa chỉ</Label>
           <Input
             id="address"
             {...register("address")}
@@ -76,7 +74,7 @@ const CheckoutForm: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="phone">Phone</Label>
+            <Label htmlFor="phone">Số điện thoại</Label>
             <Input
               type="tel"
               id="phone"
@@ -88,7 +86,7 @@ const CheckoutForm: React.FC = () => {
             )}
           </div>
           <div>
-            <Label htmlFor="city">City</Label>
+            <Label htmlFor="city">Thành phố</Label>
             <Input
               id="city"
               {...register("city")}
@@ -99,32 +97,8 @@ const CheckoutForm: React.FC = () => {
             )}
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div>
-            <Label htmlFor="zip">ZIP Code</Label>
-            <Input
-              id="zip"
-              {...register("zip")}
-              className="w-full border border-gray-300 dark:border-gray-700 rounded-lg p-6 focus:outline-none"
-            />
-            {errors.zip && (
-              <span className="text-red-500">{errors.zip.message}</span>
-            )}
-          </div>
-          <div>
-            <Label htmlFor="country">Country</Label>
-            <Input
-              id="country"
-              {...register("country")}
-              className="w-full p-6 border border-gray-300 dark:border-gray-700 rounded-lg  focus:outline-none"
-            />
-            {errors.country && (
-              <span className="text-red-500">{errors.country.message}</span>
-            )}
-          </div>
-        </div>
         <div className="flex items-center justify-end">
-          <Button type="submit">Save</Button>
+          <Button type="submit">Lưu</Button>
         </div>
       </form>
     </div>

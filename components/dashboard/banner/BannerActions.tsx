@@ -10,7 +10,11 @@ import {
 import { MoreHorizontal } from "lucide-react";
 import Link from "next/link";
 
-const BannerActions = () => {
+interface BannerProps {
+  id?: string;
+}
+
+const BannerActions = ({ id }: BannerProps) => {
   return (
     <div>
       <Popover>
@@ -21,7 +25,7 @@ const BannerActions = () => {
         </PopoverTrigger>
         <PopoverContent className="text-start">
           <Link
-            href={`/dashboard/orders/id`}
+            href={`/dashboard/banners/update-banner/${id}`}
             className="py-2 px-4 rounded-md w-full  block hover:bg-slate-200 dark:hover:bg-slate-900"
           >
             Update Banner

@@ -17,31 +17,31 @@ const CategoriesCollection = () => {
     router.push(`shop?${params.toString()}`);
   };
 
-  const watches = productsData.filter(
-    (item) => item.category.toLowerCase() === "watches"
+  const clothings = productsData.filter(
+    (item) => item.category.toLowerCase() === "clothing"
   );
 
   const headphones = productsData.filter(
-    (item) => item.category.toLowerCase() === "headphones"
+    (item) => item.category.toLowerCase() === "clothing"
   );
 
   const computers = productsData.filter(
-    (item) => item.category.toLowerCase() === "computers"
+    (item) => item.category.toLowerCase() === "clothing"
   );
 
   return (
     <section className="py-16 bg-slate-200 dark:bg-slate-800 ">
       <div className="max-w-screen-xl px-4 md:px-8  mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-wrap">
-        {/* showing watches collection */}
+        {/* showing clothings collection */}
         <div
-          onClick={() => handleCollectionClick(watches[0].category)}
+          onClick={() => handleCollectionClick(clothings[0].category)}
           className="flex flex-col gap-4 items-start justify-between p-4 md:p-8 rounded-xl bg-white dark:bg-slate-900 shadow-md"
         >
           <h2 className="text-xl md:text-2xl text-center font-semibold my-4 w-full">
-            Best Deals For You On <span className="text-2xl font-bold">{watches[0].category}</span>
+            Best Deals For You On <span className="text-2xl font-bold">{clothings[0].category}</span>
           </h2>
           <div className="grid grid-cols-2 gap-4 place-content-center w-full">
-            {watches?.slice(0, 4)?.map((watch) => (
+            {clothings?.slice(0, 4)?.map((watch) => (
               <div
                 key={watch.id}
                 className="flex flex-col items-center justify-center text-center gap-2"

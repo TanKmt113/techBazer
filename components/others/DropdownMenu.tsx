@@ -17,7 +17,7 @@ const DropdownMenuComponent = () => {
         <DropdownMenuTrigger className="flex items-center gap-2 font-medium px-4 py-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
           Pages <ChevronDown />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="p-6 space-y-2">
+        {/* <DropdownMenuContent className="p-6 space-y-2">
           <DropdownMenuItem>
             <Link href={"/homepagetwo"}>Home Page Two</Link>
           </DropdownMenuItem>
@@ -42,7 +42,7 @@ const DropdownMenuComponent = () => {
           <DropdownMenuItem>
             <Link href={"/forgot-password"}>Forgot Password Page</Link>
           </DropdownMenuItem>
-        </DropdownMenuContent>
+        </DropdownMenuContent> */}
       </DropdownMenu>
     </div>
   );

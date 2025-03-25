@@ -25,7 +25,7 @@ function HeroBannerTwo() {
                   href={`/shop`}
                   className="bg-blue-500 hover:bg-blue-600 text-lg text-white py-4 px-10 rounded-full flex items-center gap-2"
                 >
-                  <ArrowRight /> Shop Now
+                  <ArrowRight /> Mua ngay
                 </Link>
               </div>
             </div>

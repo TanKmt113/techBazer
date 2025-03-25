@@ -31,7 +31,7 @@ const MyOrdersPage = () => {
     <div className="px-4 py-8 lg:px-16 lg:py-12 bg-gray-100 dark:bg-gray-800">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-white mb-8">
-          My Orders
+          Đơn hàng của tôi
         </h1>
         <div className="space-y-8">
           {/* Loop through orders */}
@@ -49,7 +49,7 @@ const MyOrdersPage = () => {
               
               {/* Display order items */}
               <div>
-                <h2 className='text-lg font-medium my-2'>Ordered Items</h2>
+                <h2 className='text-lg font-medium my-2'>Đơn hàng đã đặt</h2>
                 {order.items.map((item) => (
                   <div key={item.id} className="flex flex-col md:flex-row justify-between items-center gap-2 p-2 shadow-sm mb-2">
                     <Image src={item.image} alt="Product" width={64} height={64} className="w-16 h-16 object-cover rounded-lg" />

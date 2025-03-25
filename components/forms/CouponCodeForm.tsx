@@ -23,7 +23,7 @@ const CouponCodeForm = () => {
           className="text-xl font-semibold text-gray-900 dark:text-white mb-4"
           htmlFor="coupon"
         >
-          Enter Your Coupon Code
+          Nhập mã phiếu giảm giá của bạn
         </Label>
         <Input
           id="coupon"
@@ -33,7 +33,7 @@ const CouponCodeForm = () => {
           className="w-full p-6 rounded-md"
         />
         <div className="flex items-center justify-end">
-          <Button>Submit</Button>
+          <Button>Xác nhận</Button>
         </div>
       </form>
     </div>

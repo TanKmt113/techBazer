@@ -12,12 +12,13 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { ArrowRight, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
-import { bannerData } from "@/data/banner/bannerData";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import useBannerStore from "@/store/bannerStore";
 
 const HeroBannerOne = () => {
   // get banners data from server then display here
+  const {bannerItems} = useBannerStore();
 
   return (
     <section className="bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 ">
@@ -30,7 +31,7 @@ const HeroBannerOne = () => {
           ]}
         >
           <CarouselContent className="space-x-2 ml-1">
-            {bannerData.map((data) => (
+            {bannerItems.map((data) => (
               <CarouselItem
                 key={data.title}
                 className={`relative rounded-xl flex flex-col-reverse md:flex-row items-center justify-evenly p-2`}

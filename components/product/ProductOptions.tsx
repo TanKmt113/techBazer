@@ -17,7 +17,7 @@ import Loader from "../others/Loader";
 const ProductOptions = ({ product }: { product: Product }) => {
   const [isMounted, setIsMounted] = useState(false);
   const { openModal } = useProductQuickViewStore();
-  const { images, name } = product;
+  const { images, productName } = product;
 
   const { addToCart } = useCartStore();
   const { addToWishlist, isInWishlist } = useWishlistStore();
@@ -31,16 +31,16 @@ const ProductOptions = ({ product }: { product: Product }) => {
   }
 
   const handleAddToCart = () => {
-    addToCart({ ...product, quantity: 1, selectedColor: "" });
-    showToast("Item Added To Cart", images[0], name);
+    addToCart({ productId:product._id, quantity: 1 });
+    showToast("Sản phẩm đã được thêm vào giỏ hàng", images[0], productName);
   };
 
   const handleAddToWishList = () => {
-    if (isInWishlist(product.id)) {
-      showToast("Item Added To Wishlist", images[0], name);
+    if (isInWishlist(1)) {
+      showToast("Item Added To Wishlist", images[0], productName);
     } else {
       addToWishlist(product);
-      showToast("Item Already Exist In Wishlist", images[0], name);
+      showToast("Item Already Exist In Wishlist", images[0], productName);
     }
   };
 
@@ -90,7 +90,7 @@ const ProductOptions = ({ product }: { product: Product }) => {
             </div>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Add To Cart</p>
+            <p>Thêm vào giỏ</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

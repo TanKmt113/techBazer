@@ -20,14 +20,19 @@ const HeaderOne = () => {
 
   const links = [
     {
-      label: "Home",
+      label: "Trang chủ",
       link: "/",
       isActive: pathname === "/",
     },
     {
-      label: "Shop",
+      label: "Cửa hàng",
       link: "/shop",
       isActive: pathname.startsWith("/shop"),
+    },
+    {
+      label: "Bài viết",
+      link: "/blogpagetwo",
+      isActive: pathname.startsWith("/blogpagetwo"),
     }
   ];
 
@@ -50,7 +55,7 @@ const HeaderOne = () => {
               {link.label}
             </Link>
           ))}
-          <DropdownMenuComponent />
+          {/* <DropdownMenuComponent /> */}
         </ul>
         <div className="flex items-center gap-6 ">
           {/* mobile search option */}

@@ -10,7 +10,7 @@ const CheckoutBtn = () => {
       className="w-full flex items-center justify-center gap-3 my-2 text-xl bg-blue-500 dark:bg-blue-600 text-white py-3 px-8 rounded-full hover:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none"
     >
       {" "}
-      <ArrowRight /> Checkout Now
+      <ArrowRight /> Thanh toán ngay
     </Link>
   );
 };

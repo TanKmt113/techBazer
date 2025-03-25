@@ -1,27 +1,26 @@
-
 export const bannerData = [
     {
-        title:'Dominate the Competition with the Legion X7',
-        description:'Unleash ultimate gaming power with the Legion X7. Featuring a top-of-the-line processor, powerful graphics card, and a high-refresh-rate display.',
-        images:['/images/banner/gaming-laptop.png'],
-        button:'Shop Gaming Laptops',
-        discountText:'Buy now Get 10% off',
-        link: `shop?category=Computers`
+        title: 'Bộ Sưu Tập Áo Thun Mùa Hè 2025',
+        description: 'Thoải mái, trẻ trung và phong cách. Khám phá ngay những mẫu áo thun hot nhất mùa hè này.',
+        images: ['https://png.pngtree.com/png-vector/20240402/ourlarge/pngtree-blank-black-male-hoodie-sweatshirt-long-sleeve-with-clipping-path-mens-png-image_12258589.png'],
+        button: 'Mua Ngay',
+        discountText: 'Giảm ngay 10% khi mua hôm nay',
+        link: `shop?category=AoThun`
     },
     {
-        title:'Introducing the All-New NovaPhone 15',
-        description:'Experience unparalleled performance with our most advanced phone yet. Blazing-fast processor, stunning camera system, and a revolutionary display.',
-        images:['/images/banner/iphone.png'],
-        button:'Order Now',
-        discountText:'Buy now Get 5% off',
-        link:`shop?category=Smartphones`
+        title: 'Quần Jeans Cá Tính - Tôn Dáng Hoàn Hảo',
+        description: 'Phong cách hiện đại, chất liệu bền bỉ, phù hợp với mọi hoàn cảnh. Khám phá ngay!',
+        images: ['https://png.pngtree.com/png-vector/20240402/ourlarge/pngtree-blank-black-male-hoodie-sweatshirt-long-sleeve-with-clipping-path-mens-png-image_12258589.png'],
+        button: 'Xem Ngay',
+        discountText: 'Mua 2 tặng 1 - Chỉ có tuần này!',
+        link: `shop?category=QuanJean`
     },
     {
-        title:'High-resolution noise-canceling headphones.',
-        description:'Immerse Yourself in Pure Sound with the SonicPro Max',
-        images:['/images/banner/headphone.png'],
-        button:'Shop Headphones',
-        discountText:'Buy now Get 15% off',
-        link:'shop?category=Headphones'
+        title: 'Sơ Mi Thanh Lịch - Sự Lựa Chọn Hoàn Hảo',
+        description: 'Đẳng cấp và tinh tế, áo sơ mi của chúng tôi mang lại sự tự tin cho mọi quý ông.',
+        images: ['https://png.pngtree.com/png-vector/20240402/ourlarge/pngtree-blank-black-male-hoodie-sweatshirt-long-sleeve-with-clipping-path-mens-png-image_12258589.png'],
+        button: 'Khám Phá Ngay',
+        discountText: 'Giảm 15% khi mua từ 2 sản phẩm',
+        link: 'shop?category=SoMi'
     },
-]
+];

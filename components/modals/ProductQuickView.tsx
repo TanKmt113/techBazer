@@ -114,13 +114,13 @@ const ProductQuickViewModal = () => {
                     className="flex flex-col md:flex-row items-center gap-2"
                     onClick={closeModal}
                   >
-                    {/* Add To Cart Button */}
+                    {/* Thêm vào giỏ Button */}
                     <AddToCartBtn
-                      product={{ ...product, quantity, selectedColor }}
+                      product={product}
                     />
                     {/* Buy Now Button */}
                     <BuyNowBtn
-                      product={{ ...product, quantity, selectedColor }}
+                      product={product}
                     />
                   </div>
                   <ProductTab

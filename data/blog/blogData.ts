@@ -1,128 +1,103 @@
 export const blogPosts = [
   {
-    title: "Top 5 Must-Have Gadgets for Students in 2024",
-    author: "John Doe (Tech Enthusiast)",
-    category: "Tech Trends",
-    image: "/images/products/senheiser-removebg-preview.png",
+    title: "Xu Hướng Thời Trang Hot Nhất Năm 2024",
+    author: "Nguyễn Mai (Fashion Blogger)",
+    category: "Xu Hướng",
+    image: "https://im.uniqlo.com/global-cms/spa/res10789f0a17bf2810dafac99bcbdc9243fr.jpg",
     excerpt:
-      "Struggling to keep up with the latest tech trends as a student? This blog post dives into the top 5 gadgets that can help you ace your studies, stay organized, and have some fun on the go!",
+      "Khám phá những xu hướng thời trang hot nhất năm 2024 mà bạn không thể bỏ lỡ! Từ phong cách minimalism đến retro, tất cả đều có trong bài viết này.",
     content: [
       {
         type: "text",
-        text: `Imagine juggling classes, assignments, and a busy social life. Staying organized and productive can be a challenge. But fear not, tech enthusiasts! Here are the top 5 gadgets every student should consider in 2024:`,
+        text: "Thời trang không ngừng thay đổi, và năm 2024 mang đến những xu hướng mới mẻ, giúp bạn thể hiện phong cách riêng.",
       },
       {
         type: "image",
-        src: "/images/products/prothonics-removebg-preview.png",
-        alt: "Noise-Canceling Headphones",
+        src: "https://im.uniqlo.com/global-cms/spa/res10789f0a17bf2810dafac99bcbdc9243fr.jpg",
+        alt: "Phong cách Minimalism",
       },
       {
         type: "text",
-        text: `1. Noise-Canceling Headphones: Block out distractions in the library or dorm room with a pair of noise-canceling headphones. Focus on lectures, study sessions, or simply unwind with your favorite music without the background noise.`,
+        text: "1. Phong cách Minimalism: Sự tối giản nhưng đầy tinh tế vẫn là xu hướng chủ đạo trong năm nay. Những bộ outfit với gam màu trung tính, thiết kế đơn giản nhưng sang trọng sẽ giúp bạn luôn nổi bật.",
       },
       {
         type: "text",
-        text: `2. Portable Charger: A reliable portable charger ensures your devices stay powered throughout the day. Whether you're attending back-to-back classes or exploring campus, a portable charger keeps you connected and avoids the dreaded low-battery anxiety.`,
+        text: "2. Phong cách Retro: Hơi thở của thập niên 80, 90 trở lại với áo blazer rộng, quần jean cạp cao và họa tiết cổ điển.",
       },
       {
         type: "text",
-        text: `3. Tablet with Stylus: Take note-taking to a whole new level with a tablet and stylus combo. Ditch bulky notebooks and scribble down ideas, annotate documents, or create mind maps with ease. The portability and versatility of a tablet make it a valuable tool for on-the-go learning.`,
+        text: "3. Denim-on-Denim: Phối đồ với denim từ đầu đến chân đang trở thành xu hướng thịnh hành, mang đến sự cá tính và năng động.",
       },
       {
         type: "image",
-        src: "/images/products/apple-watch-9-3-removebg-preview.png",
-        alt: "Smartwatch",
-      },
-      {
-        type: "text",
-        text: `4. Smartwatch: Stay organized and manage your time effectively with a smartwatch. Set reminders for deadlines, track your daily activity, and even receive notifications without needing to reach for your phone every time.`,
-      },
-      {
-        type: "text",
-        text: `5. Wireless Earbuds: Convenience meets quality with a pair of wireless earbuds. Enjoy crystal-clear audio while studying, listening to podcasts, or taking calls without the hassle of tangled wires.`,
+        src: "https://im.uniqlo.com/global-cms/spa/res10789f0a17bf2810dafac99bcbdc9243fr.jpg",
+        alt: "Xu hướng Denim-on-Denim",
       },
     ],
     date: new Date(),
   },
   {
-    title: "The Ultimate Guide to Choosing the Perfect Gaming Laptop",
-    author: "Jane Smith (Gaming Expert)",
-    category: "Gaming",
-    image: "/images/products/asus-vivobook-removebg-preview.png",
+    title: "5 Mẹo Phối Đồ Cho Nàng Công Sở Hiện Đại",
+    author: "Trần Thảo (Stylist)",
+    category: "Thời Trang Công Sở",
+    image: "https://im.uniqlo.com/global-cms/spa/res3ef4cadcc6677e11409b6dc9a635b790fr.jpg",
     excerpt:
-      "Overwhelmed by the vast selection of gaming laptops? Fear not! This comprehensive guide will break down the key factors to consider when choosing the perfect machine for your gaming needs, ensuring smooth gameplay and an immersive experience.",
+      "Bạn muốn trông thật chuyên nghiệp nhưng vẫn thời trang khi đi làm? Hãy áp dụng 5 mẹo phối đồ dưới đây để nâng tầm phong cách công sở của bạn.",
     content: [
       {
         type: "text",
-        text: "Your gaming laptop is your ultimate weapon in the virtual battlefield. But with so many options available, choosing the perfect gaming laptop can be a daunting task. Fear not, fellow gamers! Here's a comprehensive guide to help you make the right choice:",
+        text: "Dù làm việc tại văn phòng hay gặp gỡ khách hàng, bạn vẫn có thể tỏa sáng với phong cách công sở hiện đại, thanh lịch.",
       },
       {
         type: "text",
-        text: "1. Graphics Processing Unit (GPU): The GPU is the heart of a gaming laptop. It determines the quality of graphics and directly impacts gaming performance. Opt for a laptop with a powerful GPU from reputable brands like NVIDIA or AMD.",
+        text: "1. Sử dụng blazer làm điểm nhấn: Một chiếc blazer đẹp không chỉ giúp bạn trông chuyên nghiệp hơn mà còn dễ dàng phối với nhiều trang phục khác nhau.",
       },
       {
         type: "image",
-        src: "/images/products/msi-modern-14-2-removebg-preview.png",
-        alt: "Graphics Card",
+        src: "https://im.uniqlo.com/global-cms/spa/res3ef4cadcc6677e11409b6dc9a635b790fr.jpg",
+        alt: "Blazer công sở",
       },
       {
         type: "text",
-        text: "2. Processor (CPU): A high-performance CPU is essential for smooth gameplay and multitasking. Look for laptops equipped with the latest generation processors from Intel or AMD, with a focus on clock speed and core count.",
-      },
-
-      {
-        type: "text",
-        text: "3. Display: The display is your window into the gaming world. Choose a laptop with a high refresh rate and resolution for immersive gaming experiences. Consider features like G-Sync or FreeSync for tear-free gaming.",
+        text: "2. Chọn màu sắc trung tính: Những gam màu như be, trắng, đen sẽ giúp set đồ của bạn trở nên sang trọng và dễ phối hơn.",
       },
       {
         type: "text",
-        text: "4. RAM and Storage: Adequate RAM ensures smooth multitasking, while fast storage options like SSDs reduce load times and improve overall system responsiveness. Aim for at least 16GB of RAM and SSD storage for optimal performance.",
-      },
-      {
-        type: "text",
-        text: "5. Cooling System: Intense gaming sessions can push your laptop's temperature to the limit. Look for laptops with efficient cooling systems, featuring multiple heat pipes, fans, and vapor chambers to keep temperatures in check.",
+        text: "3. Kết hợp phụ kiện tinh tế: Một đôi giày cao gót đơn giản, chiếc túi xách nhỏ nhắn hay đôi khuyên tai sang trọng có thể làm nổi bật cả set đồ của bạn.",
       },
     ],
     date: new Date(),
   },
   {
-    title: "Smart Home Devices That Make Your Life Easier",
-    author: "David Lee (Tech Lifestyle Blogger)",
-    category: "Smart Home",
-    image: "/images/products/galaxy-15-removebg-preview.png",
+    title: "Cách Chọn Giày Sneakers Phù Hợp Với Mọi Trang Phục",
+    author: "Hà Nam (Streetwear Enthusiast)",
+    category: "Streetwear",
+    image: "https://im.uniqlo.com/global-cms/spa/resd5d50ab46b1ef3f53ce2cb32544d29cefr.jpg",
     excerpt:
-      "Take control of your home with the power of smart technology! This blog post explores a variety of smart home devices that can automate tasks, improve your security, and even boost your energy efficiency.",
+      "Sneakers không chỉ là một đôi giày, mà còn là biểu tượng của phong cách cá nhân. Cùng khám phá cách chọn sneakers phù hợp với từng set đồ.",
     content: [
       {
         type: "text",
-        text: "Transform your home into a futuristic oasis with smart home devices that bring convenience, comfort, and efficiency to your fingertips. From automated lighting to intelligent thermostats, here are some must-have smart home devices:",
+        text: "Sneakers đã trở thành item không thể thiếu trong tủ đồ của mọi tín đồ thời trang. Nhưng làm sao để chọn đôi sneakers phù hợp?",
       },
       {
         type: "text",
-        text: "1. Smart Thermostat: Regulate your home's temperature with precision and efficiency using a smart thermostat. Control your heating and cooling systems remotely, set schedules, and optimize energy usage to save on utility bills.",
+        text: "1. Chọn sneakers trắng nếu bạn yêu thích phong cách đơn giản, dễ phối đồ.",
       },
       {
         type: "text",
-        text: "2. Smart Lighting: Illuminate your home with smart lighting solutions that offer customizable brightness, color options, and scheduling capabilities. Enjoy the convenience of controlling your lights from anywhere via smartphone or voice commands.",
+        text: "2. Nếu bạn theo đuổi phong cách streetwear, những đôi sneakers chunky sẽ giúp bạn trông nổi bật hơn.",
       },
       {
         type: "image",
-        src: "/images/products/apple-watch-se-2-removebg-preview.png",
-        alt: "Smart Lighting",
+        src: "https://im.uniqlo.com/global-cms/spa/resd5d50ab46b1ef3f53ce2cb32544d29cefr.jpg",
+        alt: "Sneakers chunky phong cách",
       },
       {
         type: "text",
-        text: "3. Smart Security Cameras: Keep an eye on your home while you're away with smart security cameras that offer live streaming, motion detection, and two-way audio capabilities. Monitor your property from anywhere with peace of mind.",
-      },
-      {
-        type: "text",
-        text: "4. Smart Locks: Ditch the traditional keys and upgrade to smart locks for enhanced security and convenience. Grant access to family members, friends, or service providers remotely and receive instant alerts for unauthorized access attempts.",
-      },
-      {
-        type: "text",
-        text: "5. Smart Plugs: Transform your ordinary appliances into smart devices with smart plugs. Schedule your devices to turn on or off automatically, monitor energy consumption, and control them remotely for added convenience and energy savings.",
+        text: "3. Kết hợp sneakers với váy midi hoặc quần âu để tạo nên vẻ ngoài thanh lịch nhưng vẫn năng động.",
       },
     ],
     date: new Date(),
-  }
+  },
 ];

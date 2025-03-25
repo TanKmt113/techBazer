@@ -16,7 +16,7 @@ const HeroBannerThree = () => {
             Explore our wide range of gadgets and electronics
           </p>
           <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700">
-            Shop Now
+            Mua ngay
           </button>
         </div>
         <div className="relative h-[20rem] lg:w-1/2 mt-8 lg:mt-0">

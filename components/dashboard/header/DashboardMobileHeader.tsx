@@ -29,25 +29,25 @@ const DashboardMobileHeader = () => {
   const dashboardLinks = [
     {
       link: "/dashboard",
-      label: "Home",
+      label: "Trang chủ",
       icon: <Home size={20} />,
       isActive: pathname === '/dashboard',
     },
     {
       link: "/dashboard/orders",
-      label: "Orders",
+      label: "Đơn hàng",
       icon: <ClipboardList size={20} />,
       isActive: pathname.includes("dashboard/orders"),
     },
     {
       link: "/dashboard/products",
-      label: "Products",
+      label: "Sản phẩm",
       icon: <Box size={20} />,
       isActive: pathname.includes("dashboard/products"),
     },
     {
       link: "/dashboard/categories",
-      label: "Categories",
+      label: "Thể loại",
       icon: <Layers size={20} />,
       isActive: pathname.includes("dashboard/categories"),
     },
@@ -59,13 +59,13 @@ const DashboardMobileHeader = () => {
     },
     {
       link: "/dashboard/blogs",
-      label: "Blogs",
+      label: "Bài viết",
       icon: <Book size={20} />,
       isActive: pathname.includes("dashboard/blogs"),
     },
     {
       link: "/dashboard/customers",
-      label: "Customers",
+      label: "Khách hàng",
       icon: <Users size={20} />,
       isActive: pathname.includes("dashboard/customers"),
     },
@@ -79,7 +79,7 @@ const DashboardMobileHeader = () => {
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
-            <SheetTitle>Mobile Menu</SheetTitle>
+            <SheetTitle>Tổng quan</SheetTitle>
             <SheetDescription>
               <ul className="flex flex-col gap-2 items-start justify-center">
                 {dashboardLinks.map((link) => (

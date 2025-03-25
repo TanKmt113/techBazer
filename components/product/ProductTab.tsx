@@ -38,7 +38,7 @@ const ProductTab = ({ aboutItem = [], reviews = [] }: ProductTabsProps) => {
                 >
                   <div>
                     <p className="text-sm text-muted-foreground">
-                      {review.content}
+                      {review.comment}
                     </p>
                     <div className="flex items-center gap-1">
                       ({review.rating})
@@ -50,16 +50,16 @@ const ProductTab = ({ aboutItem = [], reviews = [] }: ProductTabsProps) => {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Image
+                    {/* <Image
                       src={review.image || ""}
                       alt="person"
                       width={48}
                       height={48}
                       className="rounded-full object-cover w-12 h-12"
-                    />
+                    /> */}
                     <div>
-                      <p className="whitespace-nowrap">{review.author}</p>
-                      <small>{review.date.toDateString()}</small>
+                      <p className="whitespace-nowrap">{review.reviewerName}</p>
+                      {/* <small>{review.date}</small> */}
                     </div>
                   </div>
                 </div>

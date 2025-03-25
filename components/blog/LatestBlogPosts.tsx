@@ -13,15 +13,15 @@ const LatestBlogPosts = ({ twoColunmHeader }: { twoColunmHeader: boolean }) => {
         {twoColunmHeader ? (
           <div className="flex flex-wrap items-center justify-center md:justify-between mb-12">
             <h2 className="text-3xl md:text-5xl !text-center md:text-start font-bold  text-gray-900 dark:text-white border-l-4 p-2 border-l-rose-500 ">
-              Latest Blog Posts
+              Bài viết blog mới nhất
             </h2>
             <Button variant={"outline"} className="hidden md:block" size={"sm"}>
-              <Link href={"/blog"}>Read More</Link>
+              <Link href={"/blog"}>Xem thêm</Link>
             </Button>
           </div>
         ) : (
           <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-12 border-l-4 border-l-rose-500 w-fit mx-auto p-2">
-            Latest Blog Posts
+            Bài viết blog mới nhất
           </h2>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -53,7 +53,7 @@ const LatestBlogPosts = ({ twoColunmHeader }: { twoColunmHeader: boolean }) => {
                     href={`/blog/${post.title}`}
                     className="text-blue-600 dark:text-blue-400 hover:underline"
                   >
-                    Read More
+                    Xem thêm
                   </Link>
                 </div>
               </div>

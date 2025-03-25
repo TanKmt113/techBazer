@@ -1,25 +1,31 @@
 // change or modify the types as your requirement
 
 export type Product = {
-  id: number;
-  name: string;
+  _id: string;
+  productName: string;
   category: string;
   description: string;
   aboutItem: string[];
   price: number;
   discount: number;
   rating: number;
-  reviews: Review[];
-  brand?: string;
+  reviews?: Review[];
+  brand?: any;
   color?: string[];
   stockItems: number;
   images: string[];
+  thumbnailPath?:string,
+  categorySlug:string,
+  genre:string,
+  
 };
 
+
+
 export type Review = {
-  author: string;
+  reviewerName: string;
   image: string;
-  content: string;
+  comment: string;
   rating:number
   date: Date;
 };
@@ -34,7 +40,39 @@ export type SearchParams = {
   color: string;
 };
 
-export type CartItem = Product & {
-  selectedColor: string;
-  quantity: number;
+export type CartItem = {
+  
+  productId: string,
+  productName?: string,
+  quantity: number,
+  price?: number,
+  discount?: number,
+  images?: string[],
+  subTotal?: number,
+  finalSubTotal?: number
 };
+
+export type Banner = {
+  _id?:string,
+  title:string,
+  description: string,
+  images: string[],
+  button: string,
+  discountText: string,
+  link: string
+}
+
+export type Order = {
+
+  fullName: string,
+  phone: string,
+  addressLine: string,
+  ward: string,
+  district: string,
+  province: string,
+  paymentMethod: string,
+  notes: string,
+  type: string,
+  productId: string,
+  quantity: string
+}

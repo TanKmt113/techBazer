@@ -79,7 +79,6 @@ const OrderDetails = () => {
           </p>
         </div>
       </div>
-
       
       <div className="mt-6">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">

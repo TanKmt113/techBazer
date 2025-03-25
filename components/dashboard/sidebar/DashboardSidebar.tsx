@@ -17,28 +17,28 @@ const DashboardSidebar = () => {
 
   const pathname = usePathname();
 
-  const dashboardLinks = [
+ const dashboardLinks = [
     {
       link: "/dashboard",
-      label: "Home",
+      label: "Trang chủ",
       icon: <Home size={20} />,
-      isActive: pathname === "/dashboard",
+      isActive: pathname === '/dashboard',
     },
     {
       link: "/dashboard/orders",
-      label: "Orders",
+      label: "Đơn hàng",
       icon: <ClipboardList size={20} />,
       isActive: pathname.includes("dashboard/orders"),
     },
     {
       link: "/dashboard/products",
-      label: "Products",
+      label: "Sản phẩm",
       icon: <Box size={20} />,
       isActive: pathname.includes("dashboard/products"),
     },
     {
       link: "/dashboard/categories",
-      label: "Categories",
+      label: "Thể loại",
       icon: <Layers size={20} />,
       isActive: pathname.includes("dashboard/categories"),
     },
@@ -50,13 +50,13 @@ const DashboardSidebar = () => {
     },
     {
       link: "/dashboard/blogs",
-      label: "Blogs",
+      label: "Bài viết",
       icon: <Book size={20} />,
       isActive: pathname.includes("dashboard/blogs"),
     },
     {
       link: "/dashboard/customers",
-      label: "Customers",
+      label: "Khách hàng",
       icon: <Users size={20} />,
       isActive: pathname.includes("dashboard/customers"),
     },

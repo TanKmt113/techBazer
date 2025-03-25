@@ -40,7 +40,7 @@ const BlogPageTwo = () => {
                   href={`/blog/${post.title}`}
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  Read More
+                  Xem thêm
                 </Link>
               </div>
             </div>

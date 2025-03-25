@@ -39,7 +39,7 @@ const BlogPageOne = () => {
               </div>
             </div>
             <p>{blog.excerpt}</p>
-            <Link href={`/blog/${blog.title}`} className="text-gray-900 dark:text-gray-100 underline text-muted-foreground my-2">Read More</Link>
+            <Link href={`/blog/${blog.title}`} className="text-gray-900 dark:text-gray-100 underline text-muted-foreground my-2">Xem thêm</Link>
           </div>
         ))}
       </div>
